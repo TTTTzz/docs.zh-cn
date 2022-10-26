@@ -144,7 +144,7 @@ DISTRIBUTED BY HASH(site_id,city_code) BUCKETS 10;
 
 > 注意：
 >
-> - 您需要执行`SET GLOBAL enable_tablet_internal_parallel;`，开启并行扫描 Tablet。
+> - 您需要执行`SET GLOBAL enable_tablet_internal_parallel=true;`，开启并行扫描 Tablet。
 >
 > - 不支持修改已创建的分区的分桶数量，支持在增加分区时为新增分区设置新的分桶数量。
 
